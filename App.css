@@ -1,0 +1,749 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  float: left;
+}
+
+
+
+.App-header {
+  /*background-color: #282c34;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+/*Navigation*/
+
+
+.nav_navlink {
+  font-size: 14px;
+  color: black;
+  display: inline;
+}
+
+.nav_navlink_aside {
+  font-family: Calibri;
+  font-size: 17px;
+  color: black;
+  display: inline;
+  padding: 5px;
+  margin-left: 10px;
+  border-bottom: 1px solid gainsboro;
+
+}
+
+a .active {
+  background-color: gainsboro;
+}
+
+/*Apps*/
+.app_title {
+  width: 100%;
+  height: 77px;
+  /*background-color: rgb(210, 208, 208);*/
+  background-color: white;
+
+}
+
+.prompt {
+  padding-left: 10%;
+}
+
+.head {
+  position: absolute;
+  padding-top: 1%;
+  right: 30px;
+  font-family: Calibri;
+  /* font-family:  serif ;*/
+  font-style: italic;
+  font-weight: bold;
+}
+
+.app_nav {
+  /*background-color: #61fbdf;*/
+  background-color: #39984e;
+
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.app_nav_navlink_home {
+  font-family: Candara;
+  font-size: 18px;
+  /*margin-top:-5px;*/
+  position: absolute;
+  right: 12rem;
+  color: white;
+  font-weight: 500;
+
+}
+
+.app_nav_navlink_logout {
+  font-family: Candara;
+  font-size: 18px;
+  /*margin-top:-5px;*/
+  padding-top: 0px;
+  position: absolute;
+  right: 4rem;
+  color: white;
+  font-weight: 500;
+}
+
+.app_side_nav_summary {
+  font-family: Calibri;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 19px;
+  margin-left: 15px;
+  border-bottom: 2px solid gainsboro;
+}
+
+.app_side_nav {
+  height: 565px;
+  border-right: 3px solid grey;
+  margin-bottom: 8px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.Modal.body {
+  overflow-y: scroll;
+}
+
+.app_side_nav .active {
+  background-color: #F0EBE3;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.padding-0 {
+  padding-left: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(87, 87, 87);
+  border-radius: 10px;
+}
+
+.app_body {
+  box-Shadow: 0px 0px 2px rgb(32, 31, 31);
+  height: 565px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+
+/* tables*/
+
+table {
+  width: 100%;
+  font-size: 14px;
+
+}
+
+.table td {
+  padding: 0.30rem 2.5rem 0.30rem 0.10rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 17px;
+}
+
+
+.table th {
+  padding: 0.30rem 2.5rem 0.30rem 0.10rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+.id,
+.code {
+  width: 10%;
+}
+
+.name {
+  width: 30%;
+}
+
+.valid {
+  width: 15%;
+}
+
+.option {
+  width: 10%;
+}
+
+.delete_btn,
+.edit_btn {
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 0.2rem;
+}
+
+
+
+.add_btn,
+.edt_btn,
+.cancl_btn,
+.pg1,
+.pg2,
+.pg3 {
+  line-height: 0.7rem;
+  width: 100px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /*   margin-left: 470px; */
+  background-color: #2b9d80;
+  box-shadow: 1px 1px 1px 1px rgb(46, 46, 46);
+}
+
+
+.top_btn {
+  position: relative;
+  margin-top: 0px;
+  left: 360px;
+  top: 12px;
+}
+
+.cancl_btn {
+  position: relative;
+  margin-top: 0px;
+  left: 150px;
+  bottom: 31px;
+
+}
+
+.pg1 {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 22px;
+}
+
+.pg2 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 50px;
+}
+
+.pg2cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 20px;
+}
+
+.pg3 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 140px;
+}
+
+.pg3cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 110px;
+}
+
+.pg4 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 200px;
+}
+
+.pg4cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 170px;
+}
+
+.pg5 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 140px;
+}
+
+.pg5cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 110px;
+}
+
+.pg6 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 140px;
+}
+
+.pg6cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 110px;
+}
+
+.pg7 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 20px;
+
+}
+
+.pg7cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  bottom: 9px;
+}
+
+.pg8 {
+  position: relative;
+  margin-top: 0px;
+  left: 450px;
+  top: 110px;
+}
+
+.pg8cn {
+  position: relative;
+  margin-top: 0px;
+  left: 650px;
+  top: 80px;
+}
+
+.add_btn:hover {
+  background-color: #3bbe9e;
+  font-size: 16px;
+  width: 100px;
+}
+
+
+.edt_btn:hover {
+  background-color: #2b9d80;
+}
+
+
+
+.add_btn::selection {
+  background-color: #2b9d80;
+}
+
+.page_title {
+  line-height: 0.5rem;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #C7BCA1;
+  font-size: 22px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  color: black;
+  font-family: Candara;
+  font-weight: bold;
+}
+
+/*Company table*/
+
+.formcontrol {
+
+  display: flex;
+
+  flex: left;
+
+  text-align: right;
+
+}
+
+.formcontrol1 {
+
+  display: flex;
+
+  flex: left;
+
+  text-align: left;
+
+}
+
+.formlabel {
+
+  width: 90%;
+  font-size: 18px;
+  padding-right: 10px;
+  font-family: Calibri;
+
+}
+
+.longlabel {
+
+
+  width: 28%;
+
+}
+
+.longinput {
+  width: 80%
+}
+
+
+
+/*---------------------*/
+/*Toggle*/
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.ValidLabel {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.ValidLabel:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked+.ValidLabel {
+  background: #3ae0f2;
+
+}
+
+input:checked+.ValidLabel:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.ValidLabel:active:after {
+  width: 13px;
+}
+
+
+
+
+.toggle_cont {
+  width: 62%
+}
+
+.toggle_lable {
+  padding-Right: 15px
+}
+
+.inputtogglelable {
+  display: inline-block;
+  text-Align: left
+}
+
+
+.toggle_td {
+  text-Align: right
+}
+
+
+.star:after {
+  color: #b80006;
+  content: "*";
+  position: relative;
+}
+
+/* on off toggle */
+
+
+.ValidLabel .toggleoff {
+  padding: 2px 2px;
+  text-indent: 0px;
+  visibility: hidden;
+}
+
+.ValidLabel .toggleon {
+  padding: 2px 0px;
+  text-indent: 0px;
+  color: white
+}
+
+input:checked+.ValidLabel .toggleoff {
+  visibility: visible;
+  color: black
+}
+
+input:checked+.ValidLabel .toggleon {
+  visibility: hidden;
+}
+
+
+
+/*  next page icon */
+
+
+.R1 {
+  position: relative;
+  align-items: center;
+  left: 1180px;
+  border-radius: 50%;
+  top: -15px;
+}
+
+.L2 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  bottom: 10px;
+}
+
+.R2 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  bottom: 10px;
+}
+
+
+.L3 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+.R3 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+
+.L4 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  top: 136px;
+}
+
+.R4 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  top: 136px;
+}
+
+.L5 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+.R5 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+.L6 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+.R6 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  top: 75px;
+}
+
+.L7 {
+  position: relative;
+  left: 1140px;
+  border-radius: 50%;
+  top: -50px;
+}
+
+.R7 {
+  position: relative;
+  align-items: center;
+  left: 20px;
+  border-radius: 50%;
+  top: -50px;
+}
+
+.L8 {
+  position: relative;
+  left: 20px;
+  border-radius: 50%;
+  top: 40px;
+}
+
+
+h4 {
+  font-size: 14px;
+
+}
+
+.evl_table td,
+.evl_table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+.rb {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+/*--------------------------*/
+
+/* In your CSS file or component */
+.rating-scale {
+  font-weight: bold;
+  position: relative;
+  left: 600px;
+  top: 10px;
+
+}
+
+.bad {
+  color: red;
+}
+
+/* .okay {
+  color: orange;
+}
+
+.good {
+  color: yellow;
+}
+
+.very-good {
+  color: green;
+} */
+
+.excellent {
+  color: blue;
+}
+
+/*************************************************************************************************************/
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  appearance: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add some spacing between form elements */
+label + input[type="text"],
+label + input[type="date"],
+label + select {
+  margin-top: 8px;
+}
+
+/* Add styling for required fields */
+label span {
+  color: red;
+  margin-left: 4px;
+}
